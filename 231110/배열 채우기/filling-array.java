@@ -1,29 +1,23 @@
 import java.util.*;
+//넘복잡하게 생각한다 cnt를 이용했으면 쉽게 끝났다
 public class Main {
     //10개정수입력, 입력된정수 거꾸로 순서대로출력
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-       ArrayList<Integer> arr=new ArrayList<>();
-       String[] input=sc.nextLine().split(" ");
-       for(String number : input){
-            arr.add(Integer.parseInt(number));
-       }
-       ArrayList<Integer> reverse=new ArrayList<>();
-        for(int j=0;j<arr.size();j++){
-            if(arr.get(j)==0){
-                reverse=new ArrayList<>(arr.size()-1);
-                Collections.reverse(reverse);
-                break;
-            }else{
-                reverse=new ArrayList<>(arr);
-               Collections.reverse(reverse);
+      int[] arr=new int[10];
+      int cnt=0;
+
+      for(int i=0;i<10;i++){
+        arr[i]=sc.nextInt();
+        if(arr[i]==0)
+            break;
+        cnt++;
+      }
+
+      for(int j=cnt-1;j>=0;j--){
+            System.out.print(arr[j]+" ");
+
             }
-             for(int k: reverse){
-                System.out.print(k+" ");
-            }
-            System.out.println();
-        }
-          
       
     }
 }
