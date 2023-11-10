@@ -8,16 +8,22 @@ public class Main {
        for(String number : input){
             arr.add(Integer.parseInt(number));
        }
-       Collections.converse(arr);
+       ArrayList<Integer> reverse=new ArrayList<>();
         for(int j=0;j<arr.size();j++){
-            if(arr.get(i)==0){
-                ArrayList<Integer> converse=new ArrayList<>();
-            for(int k: converse){
-                System.outprint(k+" ");
+            if(arr.get(j)==0){
+                reverse=new ArrayList<>(arr.size()-1);
+                Collections.reverse(reverse);
+                break;
+            }else{
+                reverse=new ArrayList<>(arr);
+               Collections.reverse(reverse);
             }
-            break;
+             for(int k: reverse){
+                System.out.print(k+" ");
             }
+            System.out.println();
         }
+          
       
     }
 }
