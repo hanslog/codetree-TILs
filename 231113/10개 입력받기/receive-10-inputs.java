@@ -14,12 +14,11 @@ public class Main {
                 break;
             }else{
                 sum+=n[i];
-                avg=sum/cnt;
+                avg=(double)sum/cnt;
             }
        
         }
             //출력할위치가 맞는지 신경써서 위치시키기
-             System.out.print(String.format("%d %.1f",sum,avg));
-             
+             System.out.print(String.format("%d %.1f",sum,avg));      
     }
 }
