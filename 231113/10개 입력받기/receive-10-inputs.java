@@ -19,7 +19,7 @@ public class Main {
        
         }
             //출력할위치가 맞는지 신경써서 위치시키기
-             System.out.print(sum+" ");
-             System.out.print(avg);
+             System.out.print(String.format("%d %.1f",sum,avg));
+             
     }
 }
