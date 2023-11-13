@@ -7,7 +7,8 @@ public class Main {
         int sum=0;
         double avg=0;
         int cnt=0;
-        for(int i=0;i<=10;i++){
+        //index맞추기
+        for(int i=0;i<10;i++){
             n[i]=sc.nextInt();
         //0을제외한 합과 평균/짝수가 아니다!!
             if(n[i]==0)
