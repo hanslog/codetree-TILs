@@ -9,15 +9,14 @@ public class Main {
         int cnt=0;
         for(int i=0;i<=10;i++){
             n[i]=sc.nextInt();
-            cnt++;
-            if(n[i]==0){
+        //0을제외한 합과 평균/짝수가 아니다!!
+            if(n[i]==0)
                 break;
-            }else{
                 sum+=n[i];
-                avg=(double)sum/cnt;
-            }
-       
+                 cnt++;
         }
+        //매번도는게아니라 합계하고 그수에서 나눠주는거라 for문밖이 맞다
+              avg=(double)sum/cnt;
             //출력할위치가 맞는지 신경써서 위치시키기
              System.out.printf("%d %.1f",sum,avg);      
     }
