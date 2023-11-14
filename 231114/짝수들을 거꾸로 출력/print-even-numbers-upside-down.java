@@ -14,6 +14,7 @@ public class Main {
             }
         }
         Collections.reverse(arr2);
-        System.out.println(arr2+" ");  
+        for(String figure:arr2)//배열집합에서 문자 String으로 바꿔주기
+        System.out.print(figure+" ");  
     }
 }
