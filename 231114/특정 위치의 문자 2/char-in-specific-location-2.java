@@ -3,13 +3,14 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        char[] arr=new char[10];
-
-        for(int i=0;i<10;i++){
-                arr[i]=sc.next().charAt(0);
-                
+        String[] n=sc.nextLine().split(" ");
+        char[] arr=new char[n.length];
+        for(char i=0;i<arr.length;i++){
+    //        if(i==2 || i==4 || i==7)
+      
+//            System.out.println();
         }
-    //char로배열하나씩 받아서 넘길때 index=0부터 시작하므로 값하나씩 작음!!
-        System.out.print(arr[1]+" "+arr[4]+" "+arr[7]);
+          System.out.print(n[1]+" "+n[4]+" "+n[7]);
+
     }
 }
