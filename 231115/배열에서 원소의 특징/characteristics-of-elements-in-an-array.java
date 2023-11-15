@@ -9,6 +9,7 @@ public class Main {
             array[i]=Integer.parseInt(ten[i]);
               if(array[i]%3==0){
                  System.out.print(array[i-1]);
+                //반복해서 돌기때문에 3의배수 전값만 표시하여 break로 중지해서 빠져나오기
                  break;
               }
         }  
