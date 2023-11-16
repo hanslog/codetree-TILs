@@ -16,7 +16,7 @@ public class Main {
             arr[i]=sc.nextInt();
             if(arr[i]==0){
                 point=i;
-                break;
+                break;//0에서 종료되기때문에 break로 빠져나와야됨!
             }
             if(arr[i]%2==0)
                 arr2[i]=arr[i]/2;
