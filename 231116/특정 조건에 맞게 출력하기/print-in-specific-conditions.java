@@ -16,6 +16,7 @@ public class Main {
             arr[i]=sc.nextInt();
             if(arr[i]==0)
                 point=i;
+                break;
 
             if(arr[i]%2==0)
                 arr2[i]=arr[i]/2;
