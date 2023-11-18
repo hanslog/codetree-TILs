@@ -18,15 +18,15 @@ public class Main {
             temp[i]=sc.nextInt();
 
 
-        if(cold[i]=='Y' && temp[i] >=37){
-            hospital[0]++;
-        }else if(cold[i]=='N' && temp[i] >=37){
-            hospital[1]++;
-        }else if(cold[i]=='Y' && temp[i] < 37){
-            hospital[2]++;
-        }else if(cold[i]== 'N' && temp[i] < 37){
-            hospital[3]++;
-        }
+            if(cold[i]=='Y' && temp[i] >=37){
+                hospital[0]++;
+            }else if(cold[i]=='N' && temp[i] >=37){
+                hospital[1]++;
+            }else if(cold[i]=='Y' && temp[i] < 37){
+                hospital[2]++;
+            }else if(cold[i]== 'N' && temp[i] < 37){
+                hospital[3]++;
+            }
 
         }
  
