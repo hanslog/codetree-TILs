@@ -22,11 +22,11 @@ public class Main {
         //n1 4개
         for(int i=0;i<n1;i++){
             //n2값이 n1과 같을때는 0부터 나열하므로
+                  choose=true;
             if(element1[i]==element2[0]){
                 for(int k=0;k<n2;k++ ){
                     if(element2[k]==element1[i]){
                         //맞을때 쭉가게 true로하고 몇개까지 맞는지 i++로 지정
-                        choose=true;
                         i++;
                         //나머지 튕겨버리기
                         continue;
@@ -37,16 +37,15 @@ public class Main {
                 }
                 //forloop로 다시돌아 맞으면 중지한다/ 밖으로 돌아 YES,NO선택 false는 중지해도 true는 중지아니라 튕겨서 돈다
                 if (choose == true) {
+                    System.out.print("Yes");
 		            break;
 		        }
             }  
       
         }
-        if(choose==true){
-            System.out.print("Yes");
-        }else{
+   
             System.out.print("No");
-        }
+        
     
     }
 }
