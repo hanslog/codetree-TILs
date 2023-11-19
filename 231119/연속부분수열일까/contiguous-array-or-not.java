@@ -35,10 +35,12 @@ public class Main {
                         break;
                     }
                 }
+                //forloop로 다시돌아 맞으면 중지한다/ 밖으로 돌아 YES,NO선택 false는 중지해도 true는 중지아니라 튕겨서 돈다
+                if (choose == true) {
+		            break;
+		        }
             }  
-            if (choose == true) {
-		                    break;
-		    }
+      
         }
         if(choose==true){
             System.out.print("Yes");
