@@ -35,7 +35,10 @@ public class Main {
                         break;
                     }
                 }
-            }
+            }  
+            if (choose == true) {
+		                    break;
+		    }
         }
         if(choose==true){
             System.out.print("Yes");
