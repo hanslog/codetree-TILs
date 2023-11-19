@@ -36,9 +36,7 @@ public class Main {
 		                    }
 		                    
 		                }
-		                if (result == true) {
-		                    break;
-		                }
+		
 		            }
 		        }
 		        
