@@ -16,8 +16,8 @@ public class Main {
             element1[i]=sc.nextInt();
         }
 
-        for(int j=0;j<n2;j++){
-            element2[j]=sc.nextInt();
+        for(int i=0;i<n2;i++){
+            element2[i]=sc.nextInt();
         }
         //n1 4개
         for(int i=0;i<n1;i++){
