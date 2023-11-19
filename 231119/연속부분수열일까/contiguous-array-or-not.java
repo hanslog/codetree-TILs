@@ -39,12 +39,14 @@ public class Main {
                 if (choose == true) {
                     System.out.println("Yes");
 		            break;
-		        }
+		        }else{
+                   System.out.println("No");
+                }
             }  
       
         }
    
-            System.out.println("No");
+       
         
     
     }
