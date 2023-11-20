@@ -14,12 +14,10 @@ public class Main {
         for(int i=0;i<n;i++){
             if(min>array[i]){
                 min=array[i];
+                
+     
                 cnt++;
             }
-            // if(min==array[i])
-            // {
-            //     cnt++;
-            // }
                
         }
          System.out.println(min+" "+cnt);
