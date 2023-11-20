@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    //모르겠다....3시간넘게 고민하는데 안풀린다 
+    //모르겠다....3시간넘게 고민하는데 안풀린다 힌트는 주는데 돌아버리겠다 
     public static void main(String[] args) {
         //2가 3번째로 등장할때 몇번째 위치인지 출력
         //index 를 cnt로 세서 3번째 등장하는 인덱스위치
