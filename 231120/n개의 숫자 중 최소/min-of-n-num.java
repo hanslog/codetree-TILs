@@ -6,19 +6,18 @@ public class Main {
         int n=sc.nextInt();
         int[] array=new int[n];
         int min=0;
-        int cnt=1;
+        int cnt=0;
         for(int i=0;i<n;i++){
             array[i]=sc.nextInt();
         }
-        min=array[0];
-        for(int i=0;i<n;i++){
+        min=Integer.MAX_VALUE;
+        for(int i=0;i<array.length;i++){
             if(min>array[i]){
                 min=array[i];
-                
-     
-                cnt++;
-            }
-               
+            //min이 최대값으로 클때 cnt=1이되는거 주의하기
+                cnt=1;
+            }else if(min==array[i])
+               cnt++;
         }
          System.out.println(min+" "+cnt);
 
