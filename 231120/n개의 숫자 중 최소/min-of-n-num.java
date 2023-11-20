@@ -6,23 +6,23 @@ public class Main {
         int n=sc.nextInt();
         int[] array=new int[n];
         int min=0;
-        int cnt=0;
+        int cnt=1;
         for(int i=0;i<n;i++){
             array[i]=sc.nextInt();
         }
         min=array[0];
-        for(int i=1;i<n;i++){
+        for(int i=0;i<n;i++){
             if(min>array[i]){
                 min=array[i];
-              
-            }
-            if(min==array[i])
-            {
                 cnt++;
             }
+            // if(min==array[i])
+            // {
+            //     cnt++;
+            // }
                
         }
-         System.out.println(min+" "+(cnt-1));
+         System.out.println(min+" "+cnt);
 
     }
 }
