@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    //공백제거하기 outcome="";붙이기!!
+    //공백제거하기 outcome="";붙이기!! .replaceAll(" ", "")
     public static void main(String[] args) {
        Scanner input=new Scanner(System.in);
        String str=input.nextLine();
