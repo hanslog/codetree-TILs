@@ -6,7 +6,7 @@ public class Main {
         
         for(int i=0;i<=N;i++){
             if((double)N%i==0)
-            System.out.print(i+" ");
+            System.out.print((int)i+" ");
         }
     
     }
