@@ -12,7 +12,7 @@ public class Main {
        
     }
     public static int strToNumber(int a, int c){
-        String sline="*/+-";
+        String sline="* / + - ";
         int number=0;
         if(sline.contains("*"))
             number=a*c;
