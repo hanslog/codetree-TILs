@@ -7,22 +7,28 @@ public class Main {
         int a=sc.nextInt();
         char sline=sc.next().charAt(0);
         int c=sc.nextInt();
-        
+        // String[] splitted=split(expression);
+        // int sum=0;
+        // for(String s:splitted){
+        //     sum+=strToNum(s);
+        // }
         System.out.println(a+" "+sline+" "+c+" = "+strToNumber(a,c));
        
     }
     public static int strToNumber(int a, int c){
-        String sline="* / + - ";
-        int number=0;
-        if(sline.contains("*"))
-            number=a*c;
-        else if(sline.contains("/"))
-            number=a/c;
-        else if(sline.contains("+"))
-            number=a+c;
-        else if(sline.contains("-"))
-            number=a-c;
-        
+        String[] sline={"*/+-"};
+               int number=0;
+               
+        for(int i=0;i<=sline.length-1;i++){
+            if(sline[i].contains("*"))
+                number=a*c;
+            else if(sline[i].contains("/"))
+                number=a/c;
+            else if(sline[i].contains("+"))
+                number=a+c;
+            else if(sline[i].contains("-"))
+                number=a-c;
+        }
         return number;
     }
   
