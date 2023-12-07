@@ -10,26 +10,28 @@ public class Main {
         char sline=sc.next().charAt(0);
         int c=sc.nextInt();
  
-        System.out.println(a+" "+sline+" "+c+" = "+strToNumber(a,c));
+        strToNumber(a,c);
        
     }
     public static int strToNumber(int a, int c){
-        char[]sline={'+','-','/','*'};
+        char[]sline={'+','-','/','*','^'};
                int number=0;
 
         for(int i=0;i<sline.length-1;i++){
            
             if(sline[i]=='+')
-                number=a+c;
+                System.out.println(a+" "+sline[i]+" "+c+" = "+number=a+c);
             else if(sline[i]=='-')
-                number=a-c;
+                System.out.println(a+" "+sline[i]+" "+c+" = "+number=a-c);
             else if(sline[i]=='/')
-                number=a/c;
+                System.out.println(a+" "+sline[i]+" "+c+" = "+number=a/c);
             else if(sline[i]=='*')
-                number=a*c;
-            
+                System.out.println(a+" "+sline[i]+" "+c+" = "+number=a*c);
+            else if(sline[i]=='^')
+                System.out.println("False");
+                
+            }
+            return strToNumber(a,c);
         }
-        return number;
-    }
-  
+        
 }
