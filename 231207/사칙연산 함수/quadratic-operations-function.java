@@ -14,10 +14,11 @@ public class Main {
        
     }
     public static int strToNumber(int a, int c){
-        char[] sline={'+','-','/','*'};
+        char[]sline={'+','-','/','*'};
                int number=0;
 
-        for(int i=0;i<=sline.length-1;i++){
+        for(int i=0;i<sline.length-1;i++){
+           
             if(sline[i]=='+')
                 number=a+c;
             else if(sline[i]=='-')
@@ -26,6 +27,7 @@ public class Main {
                 number=a/c;
             else if(sline[i]=='*')
                 number=a*c;
+            
         }
         return number;
     }
