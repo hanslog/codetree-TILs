@@ -15,14 +15,14 @@ public class Main {
         int n1=sc.nextInt();
         int n2=sc.nextInt();
 
-        for(int i=0;i<n1;i++){
+        for(int i=0;i<n1;i++)
             //n1에대한 배열받기
             a[i]=sc.nextInt();
-        }
-        for(int i=0;i<n2;i++){
+        
+        for(int i=0;i<n2;i++)
             //n2에대한배열받기
             b[i]=sc.nextInt();
-        }
+        
         if(Subsequence())
             System.out.print("Yes");
   
