@@ -26,11 +26,11 @@ public class Main {
         else if(sline=='*'){
         System.out.print(a+" "+sline+" "+c+" = ");
 
+       }else if(sline=='^'){
+        System.out.print("False");
        }
-       else{
-         System.out.println("False");
-               
-       }
+      
+       
      strToNumber(a,c, sline);
         
           
@@ -41,6 +41,7 @@ public class Main {
     public static int strToNumber(int a, int c, char s){
         char[] sline={'*','^','+','-','/',};
                int number=0;
+
         for(char i=0;i<=sline.length-1;i++){
                  
             if(sline[i]=='+'){
