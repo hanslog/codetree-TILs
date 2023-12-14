@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
         //미리미리 선언할꺼 다해주기
     public static final int MAX=100;
-      public static int n1, n2;
+    public static int n1, n2;
     public static int[] a=new int[MAX];
     public static int[] b=new int [MAX];
 
@@ -33,11 +33,11 @@ public class Main {
 
     public static boolean Same(int n){
         //이때 i<n2보다 작아야한다
-        for(int i=0;i<n2;i++){
+        for(int i=0;i<n2;i++)
             //a와 b가 같은지 본다
             if(a[i+n] !=b[i])
                 return false;
-        }
+        
         return true;
     }
 
