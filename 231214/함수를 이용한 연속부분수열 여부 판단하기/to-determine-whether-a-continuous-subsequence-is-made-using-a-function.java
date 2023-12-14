@@ -12,8 +12,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         //먼저 정수받구
-        int n1=sc.nextInt();
-        int n2=sc.nextInt();
+         n1=sc.nextInt();
+         n2=sc.nextInt();
 
         for(int i=0;i<n1;i++)
             //n1에대한 배열받기
@@ -30,7 +30,7 @@ public class Main {
             System.out.print("No");
     }
 
-
+ 
     public static boolean Same(int n){
         //이때 i<n2보다 작아야한다
         for(int i=0;i<n2;i++)
@@ -48,4 +48,5 @@ public class Main {
                 return true;
         return false;
     }
+
 }
