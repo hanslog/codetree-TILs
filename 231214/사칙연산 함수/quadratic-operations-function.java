@@ -60,7 +60,7 @@ public class Main {
            
                System.out.println(number=a*c);
                break;
-            }else if(!sline[i].contains("^")){
+            }else if(!sline[i].equals("^")){
                System.out.println("False");
                break;
             }
