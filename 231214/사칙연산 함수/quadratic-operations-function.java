@@ -1,7 +1,8 @@
 //작업중!! 배운거 부분적으로 활용해보기
 //나중은 전체적으로
 // equals.contains 는 String과 list에서 적용됨/ char에서 활용할수 없음!
-// String sline={"*/+-"}했어도 우선순위 */가 먼저라 +가 나와도 곱하기로됨 char로 따로따로 작살내기//울산큰바위인가부다 이문제 머이래!!!!
+// String sline={"*/+-"}했어도 우선순위 */가 먼저라 +가 나와도 곱하기로됨 char로 따로따로 작살내기
+//하다 안되면 모임스터디나가서 물어보기! 울지말기! 박터지다안되면 물어보기
 import java.util.*;
 public class Main {
     public static void main(String[] args){
