@@ -7,26 +7,26 @@ public class Main {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
-        char sline=sc.next().charAt(0);
+        String sline=sc.next();
         int c=sc.nextInt();
 
-       if(sline=='+'){
+       if(sline.equals("+")){
        
         System.out.println(a+" "+sline+" "+c+" = ");
     
        }  
-       else if(sline=='-'){
+       else if(sline.equals("-")){
         System.out.print(a+" "+sline+" "+c+" = ");
       
        }
-        else if(sline=='/'){
+        else if(sline.equals("/")){
         System.out.print(a+" "+sline+" "+c+" = ");
      
        }
-        else if(sline=='*'){
+        else if(sline.equals("*")){
         System.out.print(a+" "+sline+" "+c+" = ");
 
-       }else if(sline=='^'){
+       }else if(sline.equals("^")){
         System.out.print("False");
        }
       
@@ -38,27 +38,30 @@ public class Main {
     }
     
   
-    public static int strToNumber(int a, int c, char s){
-        char[] sline={'*','^','+','-','/',};
+    public static int strToNumber(int a, int c, String s){
+        String[] sline={"*","^","+","-","/"};
                int number=0;
 
         for(char i=0;i<=sline.length-1;i++){
                  
-            if(sline[i]=='+'){
+            if(sline[i].equals("+")){
             
                 System.out.println(number=a+c);
                 break;
-            }else if(sline[i]=='-'){
+            }else if(sline[i].equals("-")){
      
                 System.out.println(number=a-c);
                 break;
-            }else if(sline[i]=='/'){
+            }else if(sline[i].equals("/")){
        
                 System.out.println(number=a/c);
                 break;
-            }else if(sline[i]=='*'){
+            }else if(sline[i].equals("*")){
            
                System.out.println(number=a*c);
+               break;
+            }else if(sline[i].equals("^")){
+               System.out.println("False");
                break;
             }
         }
