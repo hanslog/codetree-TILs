@@ -10,23 +10,23 @@ public class Main {
         String sline=sc.next();
         int c=sc.nextInt();
 
-       if(sline.equals("+")){
+       if(sline.contains("+")){
        
         System.out.println(a+" "+sline+" "+c+" = ");
     
        }  
-       else if(sline.equals("-")){
+       else if(sline.contains("-")){
         System.out.print(a+" "+sline+" "+c+" = ");
       
        }
-        else if(sline.equals("/")){
+        else if(sline.contains("/")){
         System.out.print(a+" "+sline+" "+c+" = ");
      
        }
-        else if(sline.equals("*")){
+        else if(sline.contains("*")){
         System.out.print(a+" "+sline+" "+c+" = ");
 
-       }else if(sline.contains("^")){
+       }else if(!sline.equals("^")){
         System.out.print("False");
        }
       
