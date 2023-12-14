@@ -39,28 +39,28 @@ public class Main {
     
   
     public static int strToNumber(int a, int c, String s){
-        String[] sline={"*","^","+","-","/"};
+        String[] sline={"*^-/"};
                int number=0;
 
         for(char i=0;i<=sline.length-1;i++){
                  
-            if(sline[i].equals("+")){
+            if(sline[i].contains("+")){
             
                 System.out.println(number=a+c);
                 break;
-            }else if(sline[i].equals("-")){
+            }else if(sline[i].contains("-")){
      
                 System.out.println(number=a-c);
                 break;
-            }else if(sline[i].equals("/")){
+            }else if(sline[i].contains("/")){
        
                 System.out.println(number=a/c);
                 break;
-            }else if(sline[i].equals("*")){
+            }else if(sline[i].contains("*")){
            
                System.out.println(number=a*c);
                break;
-            }else if(sline[i].contains("^")){
+            }else if(sline[i].equals("^")){
                System.out.println("False");
                break;
             }
