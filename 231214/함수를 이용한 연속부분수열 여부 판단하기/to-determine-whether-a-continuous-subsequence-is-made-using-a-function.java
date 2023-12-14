@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        //먼저 정수받구
+        //먼저 정수받구//앞에 선언했는지 안했는지 주의해서 하구 타입써주기
          n1=sc.nextInt();
          n2=sc.nextInt();
 
