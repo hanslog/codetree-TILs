@@ -26,7 +26,7 @@ public class Main {
         else if(sline.contains("*")){
         System.out.print(a+" "+sline+" "+c+" = ");
 
-       }else if(!sline.equals("^")){
+       }else if(sline.equals("^")){
         System.out.print("False");
        }
       
@@ -60,7 +60,7 @@ public class Main {
            
                System.out.println(number=a*c);
                break;
-            }else if(!sline[i].equals("^")){
+            }else if(sline[i].equals("^")){
                System.out.println("False");
                break;
             }
