@@ -24,10 +24,10 @@ public class Main {
             b[i]=sc.nextInt();
         }
         if(Subsequence())
-            System.out.println("Yes");
+            System.out.print("Yes");
   
         else
-            System.out.println("No");
+            System.out.print("No");
     }
 
 
