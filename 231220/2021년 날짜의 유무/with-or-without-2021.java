@@ -22,12 +22,13 @@ public class Main {
     }
 
     public static boolean Month30(int M, int D){
-        
-                if(D<=28){
+
+                if(M<13 && D<=28){
                     return true;
                 }else{
                     return false;
                 }
+            
         
 }
 
