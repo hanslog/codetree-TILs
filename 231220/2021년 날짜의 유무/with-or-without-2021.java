@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static boolean Month30(int M, int D){
-
+            //테스트케이스에서 13에서 걸리기 때문에 13도 감안하고 조건에 넣어줘야 맞는다
                 if(M<13 && D<=28){
                     return true;
                 }else{
