@@ -7,15 +7,43 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         int M=sc.nextInt();
         int D=sc.nextInt();
-        for(int i=1;i<=20;i++){
-            for(int j=1;j<=50;j++){
-                if(i==M && j==D)
-                    System.out.println("Yes");
-                if(i==2 && D>28){
-                    System.out.println("No");
-                }
-            }
+       boolean calculate=false;
+       if(M==4 || M==6 || M==9 || M==11 || M==13){
+            calculate=Month30(M, D);    
+       }else {
+            calculate=Month31(M, D);
+       }
 
+       if(calculate){
+            System.out.println("Yes");
+       }else{
+            System.out.println("No");
+       }
+    }
+
+    public static boolean Month30(int M, int D){
+        
+                if(D<=28){
+                    return true;
+                }else{
+                    return false;
+                }
+        
+}
+
+    
+    public static boolean Month31(int M, int D){
+      if(M==2){
+        if(D>28){
+            return false;
+        }else{
+            return true;
         }
+      }
+      if(D<=31){
+        return true;
+      }else{
+        return false;
+      }
     }
 }
