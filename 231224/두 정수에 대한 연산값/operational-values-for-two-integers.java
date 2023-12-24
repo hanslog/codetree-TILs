@@ -1,4 +1,5 @@
 //작은수 2곱하기/큰수 25더하기
+//생성자매개변수와 메서드만든거 활용하기
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
