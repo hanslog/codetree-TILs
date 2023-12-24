@@ -22,7 +22,7 @@ public class Main {
             }else{
               return 28;
             }
-        }else if(M==4 || M==6 || M==9 || M==11){
+        }else if(M==4 || M==6 || M==9){
           return 30;
         }else{
           return 31;
