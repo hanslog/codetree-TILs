@@ -22,7 +22,7 @@ public class Main {
             }else{
               return 28;
             }
-        }else if(M==4 || M==6 || M==9){
+        }else if(M==4 || M==6 || M==9 || M==11){
           return 30;
         }else{
           return 31;
@@ -46,7 +46,7 @@ public class Main {
             System.out.println("Summer");
         }else if(M>=9 && M<=11){
           System.out.println("Fall");
-        }else if(M<13 && M<=2){
+        }else if(M<=12 && M<=2){
             System.out.println("Winter");
         }
       }else{
